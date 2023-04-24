@@ -58,7 +58,15 @@ def help_pannel(_, START: Union[bool, int] = None):
                     callback_data="help_callback hb5",
                 ),
             ],
-            mark,
+            [
+                InlineKeyboardButton(
+                    text=_["BACK_BUTTON"],
+                    callback_data="{}_home({})".format(prefix, modulo_page),
+                ),
+                InlineKeyboardButton(
+                    text=_["CLOSEMENU_BUTTON"], callback_data=f"close"
+                ),
+            ],
         ]
     )
     return upl
