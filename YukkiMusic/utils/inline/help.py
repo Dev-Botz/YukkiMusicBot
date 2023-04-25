@@ -61,7 +61,7 @@ def help_pannel(_, START: Union[bool, int] = None):
             [
                 InlineKeyboardButton(
                     text=_["BACK_BUTTON"],
-                    callback_data="{}_home({})".format(prefix, modulo_page),
+                    callback_data="settingsback_helper",
                 ),
                 InlineKeyboardButton(
                     text=_["CLOSEMENU_BUTTON"], callback_data=f"close"
