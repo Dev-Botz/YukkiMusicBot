@@ -129,7 +129,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text="Owner “, user_id=OWNER
+                        text="Owner 👨“, user_id=OWNER
                     ),
                 ]
             )
